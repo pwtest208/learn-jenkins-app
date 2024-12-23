@@ -19,5 +19,13 @@ pipeline {
                 sh 'npm --version'
             }
         }
+
+        stage('test') {
+            steps {
+                sh 'echo "Test stage"'
+            }
+        }
+
+
     }
 }
